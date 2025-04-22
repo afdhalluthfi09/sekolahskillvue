@@ -1,0 +1,14 @@
+#app{
+    .navbar{
+        #navbarSupportedContent{
+            .md-lg{
+                display: none;
+            }
+            @include media-breakpoint-down(md) {
+                .md-lg{
+                    display: block;
+                }
+            }
+        }
+    }
+}

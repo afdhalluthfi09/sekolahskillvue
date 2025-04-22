@@ -1,0 +1,27 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+// component
+@import 'text';
+
+// page
+@import 'navbar';
+@import 'login';
+@import 'page-home';
+@import 'kelas-event';
+@import 'kelas-detail';
+@import 'sidebar-dash';
+@import 'artikel';
+@import 'videolist';
+@import 'videoplayer';
+@import 'halamankerja';
+@import 'halamankerja-detail';
+@import 'layout-app';
+@import 'footer';

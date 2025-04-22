@@ -1,0 +1,202 @@
+#pageKelasEvent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F1F6FF;
+    box-sizing: content-box;
+    margin-top: 0;
+    .contain-product{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 12px;
+        .sk-filter{
+            width: 280px;
+            height: inherit;
+            margin-top: 55px;
+            margin-left: 28px;
+            h3{
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: $font-size-base;
+                line-height: 30px;
+                color: #3C3C3C;
+            }
+            input[type=checkbox] + label {
+                font-family: 'Poppins', sans-serif;
+                font-style: italic;
+                font-weight: 400;
+                font-size: 0.9rem;
+                line-height: 21px;
+                color: #7E7E7E;
+              }
+            input[type=checkbox]:checked + label {
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 0.9rem;
+                line-height: 21px;
+                color: #000;
+            }
+            ul{
+                list-style: none;
+                li{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .sk-product-list{
+
+            margin-top: 55px;
+            margin-right: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            width: 100%;
+            .card{
+                width: min(285px);
+                padding-bottom: 8px;
+                .card-body{
+                    height: 178px;
+                    .sk-sub-panel{
+                        display: flex;
+                        flex-direction: row;
+                        p{
+                            margin-right: 20px;
+                            font-family: 'Poppins', sans-serif;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 0.8rem;
+                            line-height: 21px;
+                            color: #2666CF;
+                        }
+                        button{
+                            width: 104px;
+                            height: 21px;
+                            background: #F69B39;
+                            border: none;
+                            border-radius: 5px;
+
+                            font-family: 'Poppins', sans-serif;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: .8rem;
+                            line-height: 21px;
+                            color: #FFFFFF;
+                        }
+                    }
+                    .sk-title-panel{
+                        width: 100%;
+                        font-family: 'Poppins', sans-serif;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: $font-size-base;
+                        line-height: 24px;
+                        color: #2D394E;
+                    }
+                    .sk-pemateri{
+                        font-family: 'Poppins', sans-serif;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: .8rem;
+                        line-height: 21px;
+                        color: #2D394E;
+                    }
+                    .sk-rating{
+                       display: flex;
+                       flex-direction: row;
+                       justify-content: flex-end;
+                       padding-right: 10px;
+                    }
+                }
+                .sk-harga{
+                    font-family: 'Poppins', sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    line-height: 36px;
+                    color: #2D394E;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-right: 12px;
+                    padding-left: 12px;
+                    .btn-detail{
+                        width: 130px;
+                        height: 50px;
+                        background: #2666CF;
+                        border-radius: 15px;
+                        font-family: 'Poppins', sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: $font-size-base;
+                        line-height: 30px;
+                        color: #ffff;
+                        border: none;
+
+                    }
+                }
+            }
+        }
+    }
+    .left-10{
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    @include media-breakpoint-down(md){
+        .contain-product{
+            .sk-filter{
+                display: none;
+            }
+            .sk-product-list{
+                margin-right: 0;
+                margin-top: 22px;
+                position: relative;
+                height: 100%;
+                left: 33%;
+                transform: translateX(-33%);
+                overflow-y: hidden;
+                overflow-x: scroll;
+            }
+        }
+        .filter-circle{
+            width: 40px;
+            height: 40px;
+            background-color: #F69B39;
+            border-radius: 50%;
+            margin-right: 57px;
+            margin-top: 20px;
+            &:before {
+                content: "";
+                display: block;
+                position: relative;
+                top: 12px;
+                left: 5px;
+                width: 30px;
+                border-radius: 12px;
+                height: 8px;
+                background-color: #fff;
+            }
+            &::after {
+                content: "";
+                display: block;
+                position: relative;
+                top: 15px;
+                left: 5px;
+                width: 30px;
+                border-radius: 12px;
+                height: 8px;
+                background-color: #fff;
+            }
+        }
+        .left-10{
+            margin-left: 150px;
+            transform: translateX(-33%);
+            overflow-y: hidden;
+            overflow-x: scroll;
+        }
+    }
+}

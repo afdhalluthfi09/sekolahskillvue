@@ -1,0 +1,204 @@
+.page-detail{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F1F6FF;
+    box-sizing: content-box;
+    margin-top: 92px;
+
+    .sk-title{
+        display: flex;
+        flex-direction: column;
+        padding: 50px 100px;
+        .sk-sub-title{
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: $font-size-base;
+            line-height: 30px;
+            color: #2666CF;
+        }
+        .sk-main-title{
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 2.25rem;
+            line-height: 54px;
+            color: #2D394E;
+
+        }
+    }
+    .sk-contain-main{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 100px;
+        padding: 30px 100px;
+        .sk-conatin-detail{
+            ul{
+
+                li{
+                    font-family: 'Poppins', sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: #7D7D7D;
+                }
+            }
+            .base-card{
+                padding:37px 40px ;
+                h3{
+                    font-family: 'Poppins', sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 2.25rem;
+                    line-height: 54px;
+                    color: #2666CF;
+                }
+                p{
+                    font-family: 'Poppins', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: $font-size-base;
+                    line-height: 24px;
+                    color: #2D394E;
+                    margin-top: 36px;
+                }
+                .sk-list{
+                    list-style: none;
+                    display: inline-block;
+                    li{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+
+                        p{
+                            font-family: 'Poppins', sans-serif;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: $font-size-base;
+                            line-height: 27px;
+                            color: #2D394E;
+                        }
+                    }
+                }
+            }
+        }
+        .sk-cart-product{
+            .card{
+                width: 37vw;
+                .card-header{
+                    width: 100%;
+                    height: 30vh;
+                }
+                .card-body{
+                    padding: 10px 20px;
+                    .sk-sub-panel{
+                        font-family: 'Poppins', sans-serif;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 1,5rem;
+                        line-height: 36px;
+                        color: #2666CF;
+
+                    }
+                    .sk-button-panel{
+                        width: 33.2vw;
+                        height: 8vh;
+                        background: #2666CF;
+                        border-radius: 15px;
+
+                        font-family: 'Poppins', sans-serif;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 8vh;
+                        text-align: center;
+                        color: #FFFFFF;
+                        margin: auto;
+                    }
+                    .sk-list{
+                        display: inline-block;
+                        list-style: none;
+                        li{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 10px;
+                        }
+                    }
+                }
+                .button-option{
+                    display: flex;
+                    flex-direction: column;
+                    .button-sub-options{
+                        width: 33.2vw;
+                        height: 6vh;
+                        background: #F69B39;
+                        border-radius: 15px;
+                        border: none;
+                        font-family: 'Poppins', sans-serif;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 3vh;
+                        text-align: center;
+                        color: #FFFFFF;
+                        margin: auto;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            h2 {
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid #000;
+                line-height: 0.1em;
+                margin: 10px 0 20px;
+                color: #7D7D7D;
+                span {
+                    background-color: #fff;
+                    padding:0 10px;
+                }
+             }
+        }
+    }
+    @include media-breakpoint-down(md){
+        .sk-contain-main{
+            flex-direction: column-reverse;
+            padding:0;
+            .sk-cart-product{
+                width: 100%;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                .card{
+                    width: fit-content;
+                    height: fit-content;
+                }
+            }
+            .sk-conatin-detail{
+                .base-card{
+                    padding: 0;
+                    p{
+                        padding: 10px;
+                    }
+                    h3{
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+        .sk-title{
+            width: 100vw;
+            align-items: flex-start;
+            padding: 14px;
+            .sk-main-title{
+                font-size: 1.25rem;
+                line-height: 41px;
+            }
+        }
+    }
+
+}
